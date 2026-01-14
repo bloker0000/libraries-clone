@@ -1,4 +1,4 @@
-local library, notifications = loadstring(game:HttpGet("https://raw.githubusercontent.com/i77lhm/Libraries/refs/heads/main/Vaderhaxx/Library.lua"))()
+local library, notifications = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloker0000/libraries-clone/refs/heads/main/Vaderhaxx/Library.lua"))()
 
 -- documentation 
     local window = library:window({})
