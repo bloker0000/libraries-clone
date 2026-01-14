@@ -180,7 +180,7 @@
 
     -- Font importing system 
         if not isfile(library.directory .. "/fonts/main.ttf") then 
-            writefile(library.directory .. "/fonts/main.ttf", game:HttpGet("https://github.com/i77lhm/storage/raw/refs/heads/main/fonts/ProggyClean.ttf"))
+            writefile(library.directory .. "/fonts/main.ttf", game:HttpGet("https://github.com/bloker0000/SCPRP-Scripts/raw/main/UILibrary/ProggyClean.ttf"))
         end
         
         local proggy_clean = {
