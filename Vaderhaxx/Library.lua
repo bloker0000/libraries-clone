@@ -429,6 +429,12 @@
         end 
 
         function library:apply_theme(instance, theme, property) 
+            if not themes or not themes.utility then
+                return
+            end
+            if not instance or not theme or not property then
+                return
+            end
             themes.utility[theme] = themes.utility[theme] or {}
             themes.utility[theme][property] = themes.utility[theme][property] or {}
             insert(themes.utility[theme][property], instance)
