@@ -93,6 +93,9 @@
             e = Color3.fromRGB(21, 21, 21),
             f = Color3.fromRGB(84, 84, 84),
             g = Color3.fromRGB(54, 54, 54),
+            outline = Color3.fromRGB(12, 12, 12),
+            inline = Color3.fromRGB(46, 46, 46),
+            background = Color3.fromRGB(21, 21, 21),
         },
 
         utility = {
@@ -111,6 +114,9 @@
             e = {BackgroundColor3 = {}, Color = {}},
             f = {BackgroundColor3 = {}, Color = {}},
             g = {BackgroundColor3 = {}, Color = {}},
+            outline = {BackgroundColor3 = {}, Color = {}},
+            inline = {BackgroundColor3 = {}, Color = {}},
+            background = {BackgroundColor3 = {}, Color = {}},
         }
     }
 
@@ -180,7 +186,7 @@
 
     -- Font importing system 
         if not isfile(library.directory .. "/fonts/main.ttf") then 
-            writefile(library.directory .. "/fonts/main.ttf", game:HttpGet("https://github.com/bloker0000/SCPRP-Scripts/raw/main/UILibrary/ProggyClean.ttf"))
+            writefile(library.directory .. "/fonts/main.ttf", game:HttpGet("https://github.com/bloker0000/SCPRP-Scripts/blob/main/UILibrary/ProggyClean.ttf"))
         end
         
         local proggy_clean = {
@@ -423,6 +429,12 @@
         end 
 
         function library:apply_theme(instance, theme, property) 
+            if not themes.utility[theme] then
+                return
+            end
+            if not themes.utility[theme][property] then
+                return
+            end
             insert(themes.utility[theme][property], instance)
         end
 
