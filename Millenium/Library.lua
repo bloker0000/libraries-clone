@@ -189,12 +189,12 @@
         
         local Medium = Register_Font("Medium", 200, "Normal", {
             Id = "Medium.ttf",
-            Font = game:HttpGet("https://github.com/i77lhm/storage/raw/refs/heads/main/fonts/Inter_28pt-Medium.ttf"),
+            Font = game:HttpGet("https://github.com/bloker0000/libraries-clone/raw/refs/heads/main/Millenium/Inter_28pt-Medium.ttf"),
         })
 
         local SemiBold = Register_Font("SemiBold", 200, "Normal", {
             Id = "SemiBold.ttf",
-            Font = game:HttpGet("https://github.com/i77lhm/storage/raw/refs/heads/main/fonts/Inter_28pt-SemiBold.ttf"),
+            Font = game:HttpGet("https://github.com/bloker0000/libraries-clone/raw/refs/heads/main/Millenium/Inter_28pt-SemiBold.ttf"),
         })
 
         fonts = {
